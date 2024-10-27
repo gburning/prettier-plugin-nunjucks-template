@@ -23,6 +23,7 @@
 	],
 	"main": "lib/index.js",
 	"scripts": {
+		"prepare": "npm run build",
 		"build": "tsc",
 		"build:regex": "babel src/regex_editable.ts -o src/regex.ts",
 		"watch": "npm run build -- --watch",
