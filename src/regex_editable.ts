@@ -28,12 +28,6 @@ export default regex`
 		|
 		# Comment
 		(?<comment>\{\#\g<EVERYTHING>\#\})
-		|
-		# Script Block
-		(?<scriptBlock><script\g<EVERYTHING>>\g<EVERYTHING><\/script>\s*)
-		|
-		# Style Block
-		(?<styleBlock><style\g<EVERYTHING>>\g<EVERYTHING><\/style>\s*)
 	)
 
 	(?(DEFINE)

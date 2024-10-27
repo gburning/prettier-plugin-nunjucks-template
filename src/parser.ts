@@ -28,12 +28,6 @@ export const parse: Parser<Node>["parse"] = (text) => {
 		}
 		const matchLength = match[0].length;
 
-		// skip script and style blocks
-		if (match.groups.scriptBlock || match.groups.styleBlock) {
-			i += match.index + matchLength;
-			continue;
-		}
-
 		const matchText = match.groups.node;
 		const expression = match.groups.expression;
 		const statement = match.groups.statement;
