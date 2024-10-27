@@ -3,11 +3,11 @@ import { parse } from "./parser";
 import { print, embed, getVisitorKeys } from "./printer";
 import { Parser, Printer, SupportLanguage } from "prettier";
 
-const PLUGIN_KEY = "jinja-template";
+const PLUGIN_KEY = "nunjucks-template";
 
 export const languages: SupportLanguage[] = [
 	{
-		name: "JinjaTemplate",
+		name: "NunjucksTemplate",
 		parsers: [PLUGIN_KEY],
 		extensions: [".jinja", ".jinja2", ".j2", ".html", ".njk"],
 		vscodeLanguageIds: ["jinja", "nunjucks", "njk"],
